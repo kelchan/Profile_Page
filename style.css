@@ -1,98 +1,193 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.nav {
-    background-color: #333333;
-    color: #ffffff;
-    height: 80px;
+/* NAV BAR */
+#nav-bar {
+    background-color: black;
+    padding: 2% 10%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    color: white;
 }
 
-.nav-links {
+.nav-left {
     width: 50%;
-    display: flex;
     align-items: center;
-    list-style-type: none;
-    justify-content: space-around;
-}
-
-.nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.nav-title {
-    margin-left: 20px;
-}
-
-.btn {
-    height: 35px;
-    width: 100px;
-    background-color: #17a2b8;
-    color: #ffffff;
-    border: none;
-    font-size: 16px;
-    box-shadow: 5px 5px #000000;
-}
-
-/* Usercard (start) */
-.flex-container {
-    width: 1000px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-right {
+    display: flex;
     align-items: center;
 }
 
-.user-card {
-    width: 100%;
-    background-color: #fff;
-    border: 2px solid #999;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    overflow: hidden;
+#sign-out-btn {
+    width: 7em;
+    padding: 3px;
+    background-color: #17A2B8;
+    color: white;
 }
 
-.card-header {
-    background-color: #17a2b8;
-    height: 125px;
-    margin-bottom: 70px;
+/* BODY  */
+#body {
+    padding: 3% 10%;
+    display: flex;
+    gap: 3em;
 }
 
-.card-body {
-    padding: 20px;
+.body-left {
+    /* outline: 1px solid red; */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
-.card-body h1, 
-.card-body h2,
-.card-body h3,
-.card-body p {
-    margin: 20px 0px;
+.body-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
 }
 
-.avatar-m {
+/* PROFILE */
+.profile-header {
+    background-color: #17A2B8;
+    height: 6em;
+}
+
+#profile-pic {
+    outline: 4px solid white;
+    box-shadow: 10px 10px 10px grey;
     border-radius: 50%;
-    background-color: #fff;
-    height: 190px;
-    padding: 5px;
-    margin-top: 20px;
-    margin-left: 20px;
+    width: 15%;
+    position: relative;
+    top: 2em;
+    left: 4em;
 }
 
-.icon-s {
-    height: 20px;
+
+.profile-body-desc {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 150%;
+    padding: 8% 10% 5% 10%;
+    border: 3px solid #E9E9E9;
+    border-top: none;
 }
 
-a {
-    color: #3a81e6;
+
+.profile-icon {
+    height: 1em;
 }
-/* Usercard (end) */
+
+h2, #p2 {
+    margin-bottom:10px;
+}
+
+#p1 {
+    margin-top: 10px;
+}
+
+
+/* EDUCATION */
+.header {
+    background-color: #333333;
+    padding: 1em 3em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+}
+
+h3 {
+    color: white;
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+
+.body {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 3px solid #E9E9E9;
+    border-top: none;
+    font-size: large;
+}
+
+#date {
+    color: grey;
+}
+
+
+.header > * {
+    color: white;
+}
+
+
+/* REQUESTS */
+.icon {
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+}
+
+.noti {
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+}
+
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.person > * {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+/* CONNECTIONS */
+#requests-noti {
+    width: 3.5em;
+}
+
+#connect {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2em;
+}
+
+#viewmore {
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 3px solid #E9E9E9;
+    border-top: none;
+    font-size: large;
+}

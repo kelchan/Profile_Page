@@ -5,55 +5,124 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
         <title>Profile Page</title>
     </head>
-    <body>
-        <div id="navbar">
-            <div class="nav">
-                <h1 class="nav-title">Profile</h1>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" class="active">My Profile</a></li>
-                    <li><a href="#">Find Connections</a></li>
-                    <li><button class="btn">Sign Out</button></li>
-                </ul>
-            </div>  
-        </div>
-        <div id="main">
-            <div id="subleft">
-                <div id="usercard">
-                    <div class="flex-container">
 
-                        <!-- user info card -->
-                        <div class="user-card">
-                            <div class="card-header">
-                                <img src="icons/user-circle.png" alt="user-circle" class="avatar-m">
-                            </div>
-                            <div class="card-body">
-                                <h1>Kelvin Chan </h1>
-                                <h3>
-                                    <img src="icons/map-marker.png" alt="pin" class="icon-s"> 
-                                    Hacienda Heights
-                                </h3>
-                                <p>Developer | Engineer | Problem Solver<br>
-                                Upcoming Master of full stack coding!</p>
-                                <p>
-                                    <a href="#">
-                                        <img src="icons/gear.png" alt="gear" class="icon-s"> 
-                                        edit profile
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                
+    <body>
+        <!-- nav-bar -->
+        <div id="nav-bar">
+            <ul class="nav-left">
+                <li><h1>Profile</h1></li>
+                <li><a href="#">Home</a></li>
+                <li><b><a href="#">My Profile</a></b></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="sign-out-btn">Sign Out</button>
+            </div>
+        </div>
+
+        <!-- BODY  -->
+        <div id="body">
+
+            <!-- BODY-LEFT -->
+            <div class="body-left">
+
+                <!-- PROFILE -->
+                <div id="profile">
+                    <div class="profile-header">
+                        <img id="profile-pic" src="./icons/user-circle.png" alt="">
+                    </div>
+                    <div class ="profile-body-desc">
+                        <h2>Jane Doe</h2>
+                        <img class="profile-icon" src="./icons/map-marker.png" alt="map marker">
+                        <span id="p2">Seattle</span>
+                        <p id="p1">Developer | Engineer | Problem Solver</p>
+                        <p id="p2">Master of shadows and the Internet!</p>
+                        <img class="profile-icon" src="./icons/gear.png" alt="settings icon">
+                        <span><a href="#">edit profile</a></span>
                     </div>
                 </div>
-                <div id="education"></div>
+
+                <!-- EDUCATION -->
+                <div id="education">
+                    <div class="header">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="body">
+                        <h4>Coding Dojo - Full Stack Bootcamp</h4>
+                        <p id="date">Dec 2019 - Mar 2020</p>
+                        <p>Triple black belt in Python, MERN, and C#...</p>
+                    </div>
+                </div>
+
             </div>
-            <div id="subright">
-                <div id="requests"></div>
-                <div id="connects"></div>
+
+            <!-- BODY-RIGHT -->
+            <div class="body-right">
+
+                <!-- REQUESTS -->
+                <div id="requests">
+                    <div class="header">
+                        <p class="noti">2</p>
+                        <p>Connection Requests</p>
+                    </div>
+                    <div class="body">
+                        <div class="person">
+                            <div class="person-left">
+                                <img class="icon" src="./images/todd-s.jpg" alt="Todd E">
+                                <p>Todd E</p>
+                            </div>
+                            <div class="person-right">
+                                <img class="icon" src="./icons/accept-circle.png" alt="accept">
+                                <img class="icon" src="./icons/close-circle.png" alt="reject">
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="person-left">
+                                <img class="icon" src="./images/phil-s.jpg" alt="Phil K">
+                                <p>Phil K</p>
+                            </div>
+                            <div class="person-right">
+                                <img class="icon" src="./icons/accept-circle.png" alt="accept">
+                                <img class="icon" src="./icons/close-circle.png" alt="reject">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONNECTIONS -->
+                <div id="connections">
+                    <div class="header">
+                        <p class="noti" id="requests-noti">500+</p>
+                        <p>Your Connections</p>
+                    </div>
+                    <div class="body">
+                        <div id="connect" class="person">
+                            <img class="icon" src="./images/adrien-s.jpg" alt="Adrien D">
+                            <p>Adrien D</p>
+                        </div>
+                        <div id="connect" class="person">
+                            <img src="./images/anne-s.jpg" alt="anne" class="icon">
+                            <p>Anne J</p>
+                        </div>
+                        <div id="connect" class="person">
+                            <img src="./images/alayne-s.jpg" alt="Alayne" class="icon">
+                            <p>Alayne T</p>
+                        </div>
+                        <div id="connect" class="person">
+                            <img src="./images/arry-s.jpg" alt="arry" class="icon">
+                            <p>Arry Y</p>
+                        </div>
+                    </div>
+                    <a href="#" id="viewmore">View More</a>
+                </div>
+
             </div>
         </div>
+
     </body>
 </html>
