@@ -170,6 +170,7 @@ h3 {
 .person > * {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 1em;
 }
 
@@ -177,12 +178,6 @@ h3 {
 /* CONNECTIONS */
 #requests-noti {
     width: 3.5em;
-}
-
-#connect {
-    display: flex;
-    justify-content: flex-start;
-    gap: 2em;
 }
 
 #viewmore {

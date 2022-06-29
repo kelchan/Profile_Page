@@ -37,13 +37,13 @@
                         <img id="profile-pic" src="./icons/user-circle.png" alt="">
                     </div>
                     <div class ="profile-body-desc">
-                        <h2>Jane Doe</h2>
+                        <h2 id="name">Jane Doe</h2>
                         <img class="profile-icon" src="./icons/map-marker.png" alt="map marker">
                         <span id="p2">Seattle</span>
                         <p id="p1">Developer | Engineer | Problem Solver</p>
                         <p id="p2">Master of shadows and the Internet!</p>
                         <img class="profile-icon" src="./icons/gear.png" alt="settings icon">
-                        <span><a href="#">edit profile</a></span>
+                        <span><a href="#" onclick="nameChange('#name')">edit profile</a></span>
                     </div>
                 </div>
 
@@ -71,24 +71,25 @@
                         <p>Connection Requests</p>
                     </div>
                     <div class="body">
-                        <div class="person">
+                        <div class="person" id="person1">
                             <div class="person-left">
                                 <img class="icon" src="./images/todd-s.jpg" alt="Todd E">
                                 <p>Todd E</p>
                             </div>
                             <div class="person-right">
-                                <img class="icon" src="./icons/accept-circle.png" alt="accept">
-                                <img class="icon" src="./icons/close-circle.png" alt="reject">
+                                <img class="icon" src="./icons/accept-circle.png" alt="accept1" onclick="acceptRemove('#accept,#person1')">
+                                <img class="icon" src="./icons/close-circle.png" alt="reject1"
+                                onclick="acceptRemove('#reject,#person1')">
                             </div>
                         </div>
-                        <div class="person">
+                        <div class="person" id="person2">
                             <div class="person-left">
                                 <img class="icon" src="./images/phil-s.jpg" alt="Phil K">
                                 <p>Phil K</p>
                             </div>
                             <div class="person-right">
-                                <img class="icon" src="./icons/accept-circle.png" alt="accept">
-                                <img class="icon" src="./icons/close-circle.png" alt="reject">
+                                <img class="icon" src="./icons/accept-circle.png" alt="accept2" onclick="acceptRemove('#accept,#person2')">
+                                <img class="icon" src="./icons/close-circle.png" alt="reject2" onclick="acceptRemove('#reject,#person2')">
                             </div>
                         </div>
                     </div>
@@ -101,19 +102,19 @@
                         <p>Your Connections</p>
                     </div>
                     <div class="body">
-                        <div id="connect" class="person">
+                        <div class="person">
                             <img class="icon" src="./images/adrien-s.jpg" alt="Adrien D">
                             <p>Adrien D</p>
                         </div>
-                        <div id="connect" class="person">
+                        <div class="person">
                             <img src="./images/anne-s.jpg" alt="anne" class="icon">
                             <p>Anne J</p>
                         </div>
-                        <div id="connect" class="person">
+                        <div class="person">
                             <img src="./images/alayne-s.jpg" alt="Alayne" class="icon">
                             <p>Alayne T</p>
                         </div>
-                        <div id="connect" class="person">
+                        <div class="person">
                             <img src="./images/arry-s.jpg" alt="arry" class="icon">
                             <p>Arry Y</p>
                         </div>
@@ -124,5 +125,6 @@
             </div>
         </div>
 
+        <script src="script.js"></script>
     </body>
 </html>
